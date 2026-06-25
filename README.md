@@ -1,40 +1,35 @@
-SecureMonitor
+!!! -DISCLAIMER- !!!
+This software is intended solely for personal use and educational purposes. The author accepts no liability for any consequences arising from the use of the programme. Before use, please ensure that you have permission to monitor devices and that you comply with applicable legislation.
 
-# !!! -ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ- !!! #
-Этот софт предназначен только для личного использования и обучения.
-Автор не несёт ответственности за любые последствия использования программы.
-Перед использованием убедитесь, что имеете разрешение на мониторинг устройств и соблюдаете действующее законодательство.
+--- Description ---
+SecureMonitor is a simple client-server application for monitoring active windows and periodically taking screenshots on client devices. The client sends screenshots and information about the active window to the server, where this data is stored and displayed via a PIN-protected web interface.
 
-# --- Описание --- #
-SecureMonitor — простое клиент-серверное приложение для мониторинга активных окон и периодического снятия скриншотов на клиентских устройствах. Клиент отправляет скриншоты и информацию об активном окне на сервер, где эти данные сохраняются и отображаются через защищённый PIN-кодом веб-интерфейс.
+--- Features ---
+Periodic collection of screenshots and the names of active windows on client devices.
 
-# --- Особенности --- #
-Периодический сбор скриншотов и названий активных окон на клиентах.
+A secure server with access to logs and screenshots via a PIN code.
 
-Защищённый сервер с доступом к логам и скриншотам по PIN-коду.
+A web interface for viewing screenshots with timestamps and application details.
 
-Веб-интерфейс для просмотра скриншотов с отметками времени и приложениями.
+Easy to deploy and use.
 
-Лёгкий в развертывании и использовании.
+--- Donations ---
+If you’d like to see this project continue or develop into a more advanced version, you can make a donation here: https://ko-fi.com/coolzero55894. This would mean that I haven’t wasted all those hours of work and effort.
 
-# --- Донат --- #
-Если вы хотите продолжение или более улутшеной версии можете задонатить сюда https://ko-fi.com/coolzero55894. 
-Чтобы это обозначало что я не зря потратил много часов работы и своих сил.
+--- Installation and Setup ---
+Install the dependencies:
+pip install -r requirements.txt
+Start the server:
+python server/server.py
+3. Configure and run the client (specify the server’s IP address in client.py):
 
-# --- Установка и запуск --- #
-1. Установите зависимости:
- - pip install -r requirements.txt
+python client/client.py
+4. Open the following in your browser:
 
-2. Запустите сервер:
- - python server/server.py
+http://SERVER_IP:5000/
+5. Enter the PIN (default: 1234) to view the screenshots.
 
-3.Настройте и запустите клиент (укажите IP сервера в client.py):
- - python client/client.py
+--- Licence ---
+MIT Licence (see the LICENSE file)
 
-4.Откройте в браузере:
- - http://SERVER_IP:5000/
-
-5.Введите PIN (по умолчанию: 1234) для просмотра скриншотов.
-
-# ---Лицензия --- #
-MIT License (см. файл LICENSE)
+Translated with DeepL.com (free version)
